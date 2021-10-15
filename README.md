@@ -17,12 +17,12 @@ Django app to calculate a womans cycle within a given date range and provide the
 
 
 Usage:
-##### GET http://localhost:8080/womens-health/api/create-cycles:
+- #### GET http://localhost:8080/womens-health/api/create-cycles:
 
 This will display a UI form data with the existing period cycle data in the database for the user to edit.
 
 
-#### POST http://localhost:8080/womens-health/api/create-cycles:
+- #### POST http://localhost:8080/womens-health/api/create-cycles:
 
 With the following data:
 - **Last Period**: as a date string in the format of "yyyy-mm-dd"
@@ -34,7 +34,7 @@ With the following data:
 The response would be a JSON response with the value of the number of created cycles within the given date range.
 
 
-#### GET http://localhost:8080/womens-health/api/cycle-event?date=a_date:
+- #### GET http://localhost:8080/womens-health/api/cycle-event?date=a_date:
 
 This will return a JSON response with an array of the event(s) happenning on the given date.
 

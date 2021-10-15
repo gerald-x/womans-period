@@ -4,7 +4,7 @@ Django app to calculate a womans cycle within a given date range and provide the
 ### NOTE:
 - There can only be one period cycle in the database at a time
 
-- The cycle currently in the database is a test run cycle and can be edited
+- The cycle currently in the database is a test run cycle and can be edited <br><br>
 
 
 
@@ -13,7 +13,7 @@ Django app to calculate a womans cycle within a given date range and provide the
 
 - Navigate to project base directory in your terminal
 
-- run the command **python manage.py runserver**
+- run the command **python manage.py runserver** <br><br>
 
 
 Usage:

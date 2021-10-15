@@ -19,8 +19,7 @@ Django app to calculate a womans cycle within a given date range and provide the
 Usage:
 - #### GET http://localhost:8080/womens-health/api/create-cycles:
 
-This will display a UI form data with the existing period cycle data in the database for the user to edit.
-
+This will display a UI form data with the existing period cycle data in the database for the user to edit. <br><br><br>
 
 
 - #### POST http://localhost:8080/womens-health/api/create-cycles:
@@ -32,7 +31,7 @@ With the following data:
 - **Start Date**: as a date string in the format of "yyyy-mm-dd"
 - **End Date**:  as a date string in the format of "yyyy-mm-dd"
 
-The response would be a JSON response with the value of the number of created cycles within the given date range.
+The response would be a JSON response with the value of the number of created cycles within the given date range. <br><br><br>
 
 
 

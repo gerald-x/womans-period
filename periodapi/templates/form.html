@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="{% url 'create_cycles' %}" method="post">
+            {% csrf_token %} {% for i in data%}
+            <div>
+                <label for="lastPeriod">Last Period</label>
+                <input type="date" name="last_period" id="lastPeriod" value="{{ i.last_period|slugify }}">
+            </div>
+            <div>
+                <label for="cycleAverage">Cycle Average</label>
+                <input type="number" name="cycle_average" id="cycleAverage" min="0" value="{{ i.cycle_average}}">
+            </div>
+            <div>
+                <label for="periodAverage">Period Average</label>
+                <input type="number" name="period_average" id="periodAverage" min="0" value="{{ i.period_average}}">
+            </div>
+            <div>
+                <label for="startDate">Start Date</label>
+                <input type="date" name="start_date" id="startDate" value="{{ i.start_date|slugify }}">
+            </div>
+            <div>
+                <label for="endDate">End Date</label>
+                <input type="date" name="end_date" id="endDate" value="{{ i.end_date|slugify }}">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            {% endfor %}
+        </form>
+    </div>
+</body>
+
+</html>

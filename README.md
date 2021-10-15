@@ -22,6 +22,7 @@ Usage:
 This will display a UI form data with the existing period cycle data in the database for the user to edit.
 
 
+
 - #### POST http://localhost:8080/womens-health/api/create-cycles:
 
 With the following data:
@@ -32,6 +33,7 @@ With the following data:
 - **End Date**:  as a date string in the format of "yyyy-mm-dd"
 
 The response would be a JSON response with the value of the number of created cycles within the given date range.
+
 
 
 - #### GET http://localhost:8080/womens-health/api/cycle-event?date=a_date:
